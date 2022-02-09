@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Buscador de CEP</h1>
+        <form>
+            <Label for="cep">Digite o CEP</Label>
+            <input type="text" name="cep" id="cep">
+            <input type="submit" value="Buscar" id="search">
+        </form>
+        <div class="result">
+            <p>CEP Buscado: <span class="cep"></span> </p>
+            <p>Rua: <span class="logradouro"></span></p>
+            <p>Bairro: <span class="bairro"></span></p>
+            <p>Cidade: <span class="localidade"></span></p>
+            <p>UF: <span class="uf"></span></p>
+            <p>Cód. IBGE <span class="ibge"></span></p>
+            <p>DDD: <span class="ddd"></span></p>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

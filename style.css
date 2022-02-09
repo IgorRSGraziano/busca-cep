@@ -1,0 +1,54 @@
+:root {
+    --accent-color: #73ece5;
+    --primary-color: #202632;
+    --secondary-color: #2b3443;
+
+    --primary-text-color: white;
+    --secondary-text-color: #9da4b3;
+}
+
+html {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+main {
+    margin: auto;
+    width: fit-content;
+}
+
+input {
+    color: unset;
+}
+
+#cep {
+    border: var(--accent-color) 2px solid;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    padding: 3px;
+    margin: 0px 6px;
+}
+
+#search {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border: var(--accent-color) solid 2px;
+    border-radius: 4px;
+    padding: 3px;
+}
+
+.result {
+    border: solid var(--accent-color) 2px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+}
+
+.result p{
+    color: var(--primary-text-color);
+}
+
+.result p span {
+    color: var(--secondary-text-color);
+}
