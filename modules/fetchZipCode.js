@@ -1,3 +1,4 @@
+import ZipCodeValidator from "./zipCodeValidator.js"
 export default function fetchZipCode() {
     const btn = document.querySelector('#search')
 
@@ -6,7 +7,8 @@ export default function fetchZipCode() {
     async function zipCodeValidation(event) {
         event.preventDefault()
 
-        const zipCodeSearch = document.querySelector('#cep').value
+        const zipCodeSearch = new ZipCodeValidator(document.querySelector('#cep').value).validate()
+        console.log(zipCodeSearch)
         const resultArea = document.querySelectorAll('.result span')
 
 
