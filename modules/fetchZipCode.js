@@ -8,7 +8,6 @@ export default function fetchZipCode() {
         event.preventDefault()
 
         const zipCodeSearch = new ZipCodeValidator(document.querySelector('#cep').value).validate()
-        console.log(zipCodeSearch)
         const resultArea = document.querySelectorAll('.result span')
 
 
